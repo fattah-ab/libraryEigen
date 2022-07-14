@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "a8fc1892-f419-478d-9f5a-14e8204aca7b",
+		"name": "eigen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "member",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Angga",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2075/member/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"member",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2075/member",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"member"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "HOB-83",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "The Hobbit, or There and Back Again",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "J.R.R. Tolkien",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2075/book/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"book",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2075/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrow",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "codeBook",
+									"value": "HOB-83",
+									"type": "text"
+								},
+								{
+									"key": "idMember",
+									"value": "62cfd7bc5ad8ca29ddd874aa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2075/book/borrow",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"book",
+								"borrow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "return",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "codeBook",
+									"value": "HOB-83",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2075/book/return",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2075",
+							"path": [
+								"book",
+								"return"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

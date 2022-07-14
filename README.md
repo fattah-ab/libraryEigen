@@ -10,7 +10,8 @@ please follow the step to run this project:
 1. clone this project
 2. running npm install on the project directory
 3. running npm start to start project
-4. you can test all end point with postman or insomnia 
+4. you can test all end point with postman or insomnia / import  
+   eigen.postman_collection.json
 ```
 ```
 please follow the step to run another question:
